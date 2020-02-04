@@ -2,21 +2,8 @@
 
 > A 5/3/1 &#34;Building the Monolith&#34; Calculator
 
-## Build Setup
+## Background
 
-``` bash
-# install dependencies
-$ npm run install
+Alright, so blackironbeast sucks to use on my phone, it's written in plan ol' JS and occasionally crashes when I enter my weights
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+So, I figured it was about time for an upgrade, the calculations for the program are built off [Jim Wendler's Blog](https://jimwendler.com/blogs/jimwendler-com/101078918-building-the-monolith-5-3-1-for-size)
