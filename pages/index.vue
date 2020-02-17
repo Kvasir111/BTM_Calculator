@@ -31,14 +31,24 @@
           </button>
         </div>
       </form>
+      <div>
+        <h1>Wendler "Training Maxes"</h1>
+        <ul>
+          <li :key="index" v-for="(max, index) in trainingMaxes">
+            <h3 class="inline fontOpenSans">{{max.lift}}</h3> : {{max.weight}}
+          </li>
+        </ul>
+      </div>
+      <program v-bind:weights="trainingMaxes"/>
     </div>
   </div>
 </template>
 
 <script>
 
+  import Program from "../components/program";
   export default {
-    components: {},
+    components: {Program},
     computed: {},
     data() {
       return {

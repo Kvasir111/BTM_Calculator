@@ -1,6 +1,15 @@
 <template>
     <div>
-
+      <div class="bg-white">
+        <div :key="index" v-for="(week, index) in weeks">
+          <h2 class="text-xl fontOpenSans">Week {{index +1}}</h2>
+          <ul>
+            <li :key="extersize" v-for="(extersize, index) in week.exercises">
+              {{extersize.exerciseName}}: {{extersize.percentages}} {{weights[0].weight}}
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 </template>
 
